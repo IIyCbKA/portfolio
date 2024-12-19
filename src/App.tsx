@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
 import "./index.css";
-import {AppRoutes} from "./routes";
+import AppRoutes from "./routes";
+import ListenerScrollY from "./hooks/ScrollListener";
 
-export const App: React.FC = () => {
+export default function App(): React.ReactElement {
   return (
-    <AppRoutes />
+    <>
+      <ListenerScrollY />
+      <AppRoutes />
+    </>
   );
-};
+}

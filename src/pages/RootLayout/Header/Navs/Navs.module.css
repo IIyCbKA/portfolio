@@ -1,0 +1,9 @@
+.navsContainer {
+  display: flex;
+}
+
+@media (max-width: 880px) {
+  .navsContainer {
+    display: none;
+  }
+}

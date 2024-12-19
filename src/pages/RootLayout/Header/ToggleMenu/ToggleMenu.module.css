@@ -1,0 +1,62 @@
+.toggleMenuWrapper {
+  display: none;
+  position: relative;
+  width: 35px;
+  height: 28px;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.defaultLine {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: var(--content-text-color);
+  transition: 0.2s;
+  border-radius: 100px;
+}
+
+.open {
+}
+
+.firstLine {
+  top: 0;
+}
+
+.secondLine {
+  top: calc(50% - 2px);
+}
+
+.thirdLine {
+  bottom: 0;
+}
+
+.toggleMenuWrapper.open .firstLine {
+  rotate: 45deg;
+}
+
+.toggleMenuWrapper.open .secondLine {
+  opacity: 0;
+}
+
+.toggleMenuWrapper.open .thirdLine {
+  rotate: -45deg;
+}
+
+.toggleMenuWrapper.open .defaultLine {
+  top: calc(50% - 2px);
+  background: linear-gradient(
+    90deg,
+    var(--content-root-color),
+    var(--content-second-color)
+  );
+}
+
+@media (max-width: 880px) {
+  .toggleMenuWrapper {
+    display: flex;
+  }
+}
