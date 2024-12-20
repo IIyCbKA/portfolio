@@ -16,18 +16,22 @@ export default function Header(): React.ReactElement {
     [styles.open]: isOpenMenu || scrollY,
   });
 
+  const headerMaskClasses = classNames(styles.headerMask, {
+    [styles.headerMaskBoxShadow]: !isOpenMenu,
+  });
+
   const headerContainerClasses = classNames(
     styles.headerContainer,
     CONTENT_WRAP,
   );
 
   React.useEffect(() => {
-    setOpenMenu(false);
+    if (isOpenMenu) setOpenMenu(false);
   }, [scrollY]);
 
   return (
     <div className={headerWrapperClasses}>
-      <div className={styles.headerMask} />
+      <div className={headerMaskClasses} />
       <div className={headerContainerClasses}>
         <Logotype />
         <Navs />

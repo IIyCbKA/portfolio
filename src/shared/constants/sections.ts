@@ -5,9 +5,9 @@ export const enum TITLES {
   CONTACTS = "CONTACTS",
 }
 
-export const enum HREFS {
-  ABOUT = "/#about",
-  EXPERIENCE = "/#experience",
-  WORKS = "/#works",
-  CONTACTS = "/#contacts",
+export const enum IDs {
+  ABOUT = "about",
+  EXPERIENCE = "experience",
+  WORKS = "works",
+  CONTACTS = "contacts",
 }

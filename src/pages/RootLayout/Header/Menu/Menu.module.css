@@ -17,6 +17,16 @@
   transform: translate(0%);
 }
 
+.menuItemRoot {
+  text-transform: uppercase;
+  color: var(--content-text-color);
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: left;
+}
+
 @media (max-width: 880px) {
   .menuWrapper {
     display: flex;

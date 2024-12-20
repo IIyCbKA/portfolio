@@ -1,0 +1,14 @@
+.aboutWrapper {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutContent {
+  max-width: 100%;
+  width: 1120px;
+}
+
+:global(#about) {
+  scroll-margin-top: calc(var(--header-height) + 20px);
+}

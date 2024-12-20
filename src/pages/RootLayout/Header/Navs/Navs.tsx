@@ -9,7 +9,12 @@ export default function Navs(): React.ReactElement {
     <div className={styles.navsContainer}>
       {NAV_ITEMS.map(
         (item: AnchorButtonDataInterface): React.ReactElement => (
-          <AnchorButton key={item.title} title={item.title} href={item.href} />
+          <AnchorButton
+            key={item.title}
+            title={item.title}
+            id={item.id}
+            className={styles.itemNavRoot}
+          />
         ),
       )}
     </div>

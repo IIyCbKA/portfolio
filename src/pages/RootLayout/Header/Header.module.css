@@ -31,16 +31,13 @@
   height: 100%;
   transition: 0.25s;
   z-index: -1;
+}
+
+.headerMaskBoxShadow {
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
 }
 
 .open .headerMask {
-  display: none;
+  display: block;
   width: 100%;
-}
-
-@media (max-width: 880px) {
-  .open .headerMask {
-    display: block;
-  }
 }

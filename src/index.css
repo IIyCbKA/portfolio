@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
 }
 
-a {
+button {
   font-family: var(--root-font), monospace;
   text-decoration: none;
 }
