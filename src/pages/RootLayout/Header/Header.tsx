@@ -4,9 +4,9 @@ import Logotype from "./Logotype/Logotype";
 import Navs from "./Navs/Navs";
 import ToggleMenu from "./ToggleMenu/ToggleMenu";
 import classNames from "classnames";
-import { CONTENT_WRAP } from "../../../shared/constants/classnames";
 import Menu from "./Menu/Menu";
 import { ScrollStore } from "../../../stores/ScrollStore";
+import sharedStyles from "../../../shared/styles.module.css";
 
 export default function Header(): React.ReactElement {
   const scrollY = ScrollStore((state) => state.scrollY);
@@ -22,7 +22,7 @@ export default function Header(): React.ReactElement {
 
   const headerContainerClasses = classNames(
     styles.headerContainer,
-    CONTENT_WRAP,
+    sharedStyles.contentWrap,
   );
 
   React.useEffect(() => {

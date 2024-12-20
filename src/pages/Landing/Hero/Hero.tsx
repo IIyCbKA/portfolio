@@ -3,11 +3,7 @@ import styles from "./Hero.module.css";
 import Hero1400x720 from "../../../assets/Hero-1400x720.svg";
 import Hero500x500 from "../../../assets/Hero-500x500.svg";
 import classNames from "classnames";
-import {
-  CONTENT_WRAP,
-  LARGE_TEXT,
-  LARGEST_TITLE,
-} from "../../../shared/constants/classnames";
+import sharedStyles from "../../../shared/styles.module.css";
 import { FIRST_OTHER_TEXT, NAME, SECOND_OTHER_TEXT } from "./Hero.constants";
 
 export default function Hero(): React.ReactElement {
@@ -17,11 +13,17 @@ export default function Hero(): React.ReactElement {
 
   const contentContainerClasses = classNames(
     styles.heroContentContainer,
-    CONTENT_WRAP,
+    sharedStyles.contentWrap,
   );
 
-  const nameClasses = classNames(LARGEST_TITLE, styles.heroNameText);
-  const otherTextClasses = classNames(LARGE_TEXT, styles.heroOtherText);
+  const nameClasses = classNames(
+    sharedStyles.largestTitle,
+    styles.heroNameText,
+  );
+  const otherTextClasses = classNames(
+    sharedStyles.largeText,
+    styles.heroOtherText,
+  );
 
   return (
     <div className={styles.heroWrapper}>

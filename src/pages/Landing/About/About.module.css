@@ -9,6 +9,10 @@
   width: 1120px;
 }
 
+.aboutTitle {
+  color: var(--content-root-color);
+}
+
 :global(#about) {
   scroll-margin-top: calc(var(--header-height) + 20px);
 }

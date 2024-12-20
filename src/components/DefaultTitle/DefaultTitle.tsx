@@ -2,20 +2,17 @@ import React from "react";
 import styles from "./DefaultTitle.module.css";
 import { TextComponentsInterface } from "../../shared/models/TextComponents.interface";
 import classNames from "classnames";
-import { DEFAULT_TITLE } from "../../shared/constants/classnames";
+import sharedStyles from "../../shared/styles.module.css";
 
 export default function DefaultTitle({
   title,
-  color,
+  className,
 }: TextComponentsInterface): React.ReactElement {
   const defaultTitleClasses = classNames(
     styles.defaultTitleComp,
-    DEFAULT_TITLE,
+    sharedStyles.defaultTitle,
+    className,
   );
 
-  return (
-    <div className={defaultTitleClasses} style={{ color: color }}>
-      {title}
-    </div>
-  );
+  return <div className={defaultTitleClasses}>{title}</div>;
 }

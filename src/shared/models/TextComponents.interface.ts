@@ -1,10 +1,10 @@
 /*
 --------------TextComponents Interface--------------
-title - текст содержимого
-color - цвет текста
+title     - текст содержимого
+className - стили к тексту (необязательный параметр)
 */
 
 export interface TextComponentsInterface {
   title: string;
-  color: string;
+  className?: string;
 }
