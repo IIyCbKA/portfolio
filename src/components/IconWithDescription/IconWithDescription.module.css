@@ -1,0 +1,10 @@
+.iconWithTitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconWithTitle_icon {
+  width: 48px;
+  height: 48px;
+}

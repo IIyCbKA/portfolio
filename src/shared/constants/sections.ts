@@ -1,13 +1,13 @@
 export const enum TITLES {
   ABOUT = "ABOUT",
-  EXPERIENCE = "EXPERIENCE",
+  SKILLS = "SKILLS",
   WORKS = "WORKS",
   CONTACTS = "CONTACTS",
 }
 
 export const enum IDs {
   ABOUT = "about",
-  EXPERIENCE = "experience",
+  SKILLS = "skills",
   WORKS = "works",
   CONTACTS = "contacts",
 }
