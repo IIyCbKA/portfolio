@@ -1,8 +1,8 @@
 /*
---------------MenuProps Interface--------------
+--------------MenuData Interface--------------
 isOpen  - флаг, открыто ли меню
 */
 
-export interface MenuProps {
+export interface MenuData {
   isOpen: boolean;
 }

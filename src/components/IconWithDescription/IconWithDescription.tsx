@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./IconWithDescription.module.css";
-import { IconWithDescriptionInterface } from "../../shared/models/IconWithDescriptionInterface";
+import { IconWithDescriptionData } from "../../shared/models/IconWithDescriptionInterface";
 import sharedStyles from "../../shared/styles.module.css";
 import classNames from "classnames";
 
@@ -9,7 +9,7 @@ export default function IconWithDescription({
   description,
   iconClassName,
   className,
-}: IconWithDescriptionInterface): React.ReactElement {
+}: IconWithDescriptionData): React.ReactElement {
   const containerClasses = classNames(styles.iconWithTitleContainer, className);
 
   const iconClasses = classNames(iconClassName, {

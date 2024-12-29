@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./ToggleMenu.module.css";
 import classNames from "classnames";
-import { ToggleMenuProps } from "./ToggleMenu.interface";
+import { ToggleMenuData } from "./ToggleMenu.interface";
 
 export default function ToggleMenu({
   isOpen,
   setOpen,
-}: ToggleMenuProps): React.ReactElement {
+}: ToggleMenuData): React.ReactElement {
   const onClick = () => {
     setOpen((prevState) => !prevState);
   };

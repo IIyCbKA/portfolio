@@ -1,0 +1,29 @@
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.footerContent {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footerButton {
+  margin: 0;
+  text-transform: none;
+}
+
+.footerEndline {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(
+    90deg,
+    var(--content-root-color),
+    var(--content-second-color)
+  );
+}

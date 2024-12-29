@@ -6,7 +6,7 @@ iconClassName - имена css стилей к картинке (необяза�
 className     - имена css стилей к контейнеру (необязательный параметр)
 */
 
-export interface IconWithDescriptionInterface {
+export interface IconWithDescriptionData {
   icon: string;
   description: string;
   iconClassName?: string;

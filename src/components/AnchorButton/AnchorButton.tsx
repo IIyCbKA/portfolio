@@ -1,22 +1,29 @@
 import React from "react";
-import { AnchorButtonDataInterface } from "../../shared/models/AnchorButtonData.interface";
+import { AnchorButtonType } from "../../shared/models/AnchorButtonInterface";
 import styles from "./AnchorButton.module.css";
 import classNames from "classnames";
 
 export default function AnchorButton({
   title,
   id,
+  href,
   className,
-}: AnchorButtonDataInterface): React.ReactElement {
-  const buttonClasses = classNames(styles.anchorButtonRoot, className);
+}: AnchorButtonType): React.ReactElement {
+  const buttonClasses = classNames(
+    styles.anchorButtonWrap,
+    styles.anchorButtonRoot,
+    className,
+  );
 
-  const scrollTo = () => {
-    const element = document.getElementById(id);
-    if (element) element.scrollIntoView({ behavior: "smooth" });
+  const handleClick = () => {
+    if (id) {
+      const element = document.getElementById(id);
+      if (element) element.scrollIntoView({ behavior: "smooth" });
+    } else window.open(href, "_blank");
   };
 
   return (
-    <button onClick={scrollTo} className={buttonClasses}>
+    <button onClick={handleClick} className={buttonClasses}>
       {title}
     </button>
   );
