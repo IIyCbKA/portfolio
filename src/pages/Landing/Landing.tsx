@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Skills from "./Skills/Skills";
+import Works from "./Works/Works";
 import { useLocation } from "react-router-dom";
 
 export default function Landing(): React.ReactElement {
@@ -20,6 +21,7 @@ export default function Landing(): React.ReactElement {
       <Hero />
       <About />
       <Skills />
+      <Works />
     </>
   );
 }

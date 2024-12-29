@@ -6,6 +6,7 @@
   --content-second-color: #144b9d;
   --content-third-color: #ffffff;
   --content-text-color: #212529;
+  --default-content-width: 1120px;
 }
 
 * {

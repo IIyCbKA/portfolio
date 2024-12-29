@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./About.module.css";
 import classNames from "classnames";
 import sharedStyles from "../../../shared/styles.module.css";
-import DefaultTitle from "../../../components/DefaultTitle/DefaultTitle";
 import { IDs, TITLES } from "../../../shared/constants/sections";
 import { ABOUT_PARAGRAPHS } from "./About.constants";
 
@@ -13,10 +12,12 @@ export default function About(): React.ReactElement {
     sharedStyles.defaultText,
   );
 
+  const titleClasses = classNames(styles.aboutTitle, sharedStyles.defaultTitle);
+
   return (
     <div id={IDs.ABOUT} className={styles.aboutWrapper}>
       <div className={contentClasses}>
-        <DefaultTitle title={TITLES.ABOUT} className={styles.aboutTitle} />
+        <div className={titleClasses}>{TITLES.ABOUT}</div>
         {ABOUT_PARAGRAPHS.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}

@@ -1,4 +1,5 @@
 import { Skill } from "./Skills.interface";
+import { URLS, DESCRIPTIONS } from "./Skills.data";
 
 export const INTRO = `The main area of expertise is front end 
 development (client side of the web). HTML, CSS, JS, TS building small and 
@@ -6,60 +7,18 @@ medium web applications on React, custom plugins, features, animations,
 and coding interactive layouts.`;
 
 export const SKILLS: Skill[] = [
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-    description: "TypeScript",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-    description: "JavaScript",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-    description: "Python",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
-    description: "C",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
-    description: "C++",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-    description: "React",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-    description: "Node",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-    description: "Redux",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
-    description: "FastAPI",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-    description: "Docker",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg",
-    description: "CSS3",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg",
-    description: "HTML5",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg",
-    description: "PostgreSQL",
-  },
-  {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-    description: "Git",
-  },
+  { url: URLS.TYPESCRIPT, description: DESCRIPTIONS.TYPESCRIPT },
+  { url: URLS.JAVASCRIPT, description: DESCRIPTIONS.JAVASCRIPT },
+  { url: URLS.PYTHON, description: DESCRIPTIONS.PYTHON },
+  { url: URLS.CPP, description: DESCRIPTIONS.CPP },
+  { url: URLS.C, description: DESCRIPTIONS.C },
+  { url: URLS.REACT, description: DESCRIPTIONS.REACT },
+  { url: URLS.NODE, description: DESCRIPTIONS.NODE },
+  { url: URLS.REDUX, description: DESCRIPTIONS.REDUX },
+  { url: URLS.FASTAPI, description: DESCRIPTIONS.FASTAPI },
+  { url: URLS.DOCKER, description: DESCRIPTIONS.DOCKER },
+  { url: URLS.CSS3, description: DESCRIPTIONS.CSS3 },
+  { url: URLS.HTML5, description: DESCRIPTIONS.HTML5 },
+  { url: URLS.POSTGRESQL, description: DESCRIPTIONS.POSTGRESQL },
+  { url: URLS.GIT, description: DESCRIPTIONS.GIT },
 ];

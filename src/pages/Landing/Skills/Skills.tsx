@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Skills.module.css";
 import classNames from "classnames";
 import sharedStyles from "../../../shared/styles.module.css";
-import DefaultTitle from "../../../components/DefaultTitle/DefaultTitle";
 import { IDs, TITLES } from "../../../shared/constants/sections";
 import { INTRO, SKILLS } from "./Skills.constants";
 import { Skill } from "./Skills.interface";
@@ -20,10 +19,15 @@ export default function Skills(): React.ReactElement {
     sharedStyles.defaultText,
   );
 
+  const titleClasses = classNames(
+    styles.skillsTitle,
+    sharedStyles.defaultTitle,
+  );
+
   return (
     <div id={IDs.SKILLS} className={styles.skillsWrapper}>
       <div className={contentClasses}>
-        <DefaultTitle title={TITLES.SKILLS} className={styles.skillsTitle} />
+        <div className={titleClasses}>{TITLES.SKILLS}</div>
         <div className={descriptionClasses}>{INTRO}</div>
         <div className={styles.skillsIconsContainer}>
           {SKILLS.map(

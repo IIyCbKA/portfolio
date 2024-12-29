@@ -1,16 +1,18 @@
 .skillsWrapper {
-  margin-top: 100px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
 }
 
 .skillsContent {
   max-width: 100%;
-  width: 1120px;
+  width: var(--default-content-width);
 }
 
 .skillsTitle {
   color: var(--content-root-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .skillsDescriptionWrapper {
