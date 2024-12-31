@@ -20,10 +20,12 @@ This is a portfolio website of web developer IIyCbKA. Site is designed in a clas
 ![React](https://img.shields.io/badge/React-72d9fb?style=flat&logo=react&logoColor=white)
 
 ## 💻 Installation and Launch
+```bash
 git clone https://github.com/IIyCbKA/portfolio
 cd portfolio
 npm install
 npm run dev
+```
 
 ## 🤝 Contribution
 I would appreciate any suggestions for improving website. I will consider all Pull Requests.
@@ -33,6 +35,6 @@ Portfolio is [MIT licensed](https://github.com/IIyCbKA/portfolio/blob/main/LICEN
 
 ## 🙏 Gratitude
 - Thanks to Chase Ohlson for inspiration:
-  [Github](https://github.com/brohlson)
+  [Github](https://github.com/brohlson),
   [Repository](https://github.com/brohlson/chaseohlson)
 - All resources and libraries that I used in this project.
