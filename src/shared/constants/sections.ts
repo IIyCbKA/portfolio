@@ -11,3 +11,10 @@ export const enum IDs {
   WORKS = "works",
   CONTACTS = "contacts",
 }
+
+export const enum HREFS {
+  ABOUT = "#about",
+  SKILLS = "#skills",
+  WORKS = "#works",
+  CONTACTS = "#contacts",
+}

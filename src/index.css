@@ -19,7 +19,10 @@ body {
   box-sizing: border-box;
 }
 
-button {
+a {
   font-family: var(--root-font), monospace;
+}
+
+a:hover {
   text-decoration: none;
 }

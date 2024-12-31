@@ -9,7 +9,13 @@ export default function Navs(): React.ReactElement {
     <div className={styles.navsContainer}>
       {NAV_ITEMS.map(
         (item: ScrollAnchorButton): React.ReactElement => (
-          <AnchorButton key={item.title} title={item.title} id={item.id} />
+          <AnchorButton
+            key={item.title}
+            title={item.title}
+            scrollRef={item.scrollRef}
+            scrollID={item.scrollID}
+            className={styles.navsItem}
+          />
         ),
       )}
     </div>

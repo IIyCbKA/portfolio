@@ -7,7 +7,7 @@ export const FOOTER_TEXT = (
     © Copyright 2024 -
     <AnchorButton
       title={BUTTON_TITLE}
-      href={BUTTON_HREF}
+      linkRef={BUTTON_HREF}
       className={styles.footerButton}
     />
   </>

@@ -30,7 +30,7 @@ export default function Contacts(): React.ReactElement {
             {CONTACTS_ITEMS.map(
               (item: LinkAnchorButton): React.ReactElement => (
                 <li key={item.title}>
-                  <AnchorButton title={item.title} href={item.href} />
+                  <AnchorButton title={item.title} linkRef={item.linkRef} />
                 </li>
               ),
             )}

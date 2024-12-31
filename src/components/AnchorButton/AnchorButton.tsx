@@ -5,26 +5,28 @@ import classNames from "classnames";
 
 export default function AnchorButton({
   title,
-  id,
-  href,
+  scrollRef,
+  scrollID,
+  linkRef,
   className,
 }: AnchorButtonType): React.ReactElement {
-  const buttonClasses = classNames(
-    styles.anchorButtonWrap,
-    styles.anchorButtonRoot,
-    className,
-  );
+  const buttonClasses = classNames(styles.anchorButtonRoot, className);
 
-  const handleClick = () => {
-    if (id) {
-      const element = document.getElementById(id);
+  const handleClick = (event: React.MouseEvent) => {
+    event.preventDefault();
+    if (scrollID) {
+      const element = document.getElementById(scrollID);
       if (element) element.scrollIntoView({ behavior: "smooth" });
-    } else window.open(href, "_blank");
+    } else window.open(linkRef, "_blank");
   };
 
   return (
-    <button onClick={handleClick} className={buttonClasses}>
+    <a
+      href={scrollRef ? scrollRef : linkRef}
+      onClick={handleClick}
+      className={buttonClasses}
+    >
       {title}
-    </button>
+    </a>
   );
 }

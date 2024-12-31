@@ -22,7 +22,8 @@ export default function Menu({ isOpen }: MenuData): React.ReactElement {
         <AnchorButton
           key={item.title}
           title={item.title}
-          id={item.id}
+          scrollRef={item.scrollRef}
+          scrollID={item.scrollID}
           className={styles.menuItemRoot}
         />
       ))}
