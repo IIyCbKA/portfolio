@@ -22,13 +22,14 @@ export default function WorkPattern({
   );
 
   const titleClasses = classNames(styles.workTitle, sharedStyles.largeTitle);
+  const textClasses = classNames(styles.workText, sharedStyles.defaultText);
 
   return (
     <div className={containerClasses}>
       <div className={contentClasses}>
         <div className={styles.workContentLeft}>
           <div className={titleClasses}>{title}</div>
-          <div className={sharedStyles.defaultText}>{description}</div>
+          <div className={textClasses}>{description}</div>
           <div className={styles.workToolsTitle}>{TOOLS_TITLE}</div>
           <List elements={tools} />
         </div>

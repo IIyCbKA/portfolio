@@ -51,15 +51,15 @@
   position: relative;
 }
 
-.heroNameText {
-  color: var(--content-text-color);
+.heroContent .heroNameText {
+  color: var(--content-backup-color);
   margin: 8px 0 10px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.heroOtherText {
-  color: var(--content-text-color);
+.heroContent .heroOtherText {
+  color: var(--content-backup-color);
 }
 
 @media (max-width: 880px) {

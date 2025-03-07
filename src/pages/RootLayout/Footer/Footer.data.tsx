@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 
 export const FOOTER_TEXT = (
   <>
-    © Copyright 2024 -
+    © Copyright 2025 -
     <AnchorButton
       title={BUTTON_TITLE}
       linkRef={BUTTON_HREF}

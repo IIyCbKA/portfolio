@@ -9,14 +9,21 @@
   cursor: pointer;
 }
 
-.defaultLine {
+.rootLine {
   position: absolute;
   left: 0;
   height: 4px;
   width: 100%;
-  background: var(--content-text-color);
-  transition: 0.2s;
+  transition: 0.5s;
   border-radius: 100px;
+}
+
+.defaultLine {
+  background: var(--content-backup-color);
+}
+
+.lineWithHighlightedHeader {
+  background: var(--content-text-color);
 }
 
 .open {
@@ -46,7 +53,7 @@
   rotate: -45deg;
 }
 
-.toggleMenuWrapper.open .defaultLine {
+.toggleMenuWrapper.open .rootLine {
   top: calc(50% - 2px);
   background: linear-gradient(
     90deg,

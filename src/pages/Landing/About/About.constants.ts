@@ -9,9 +9,9 @@ evolving, and it's important to keep up with them.`;
 
 const ABOUT_THIRD_PARAGRAPH = `I began my journey in 2021 when I was a 
 10th-grade student and enrolled in the Yandex Lyceum for the "Basics of Python 
-Programming" course. The following year, we advanced to the "Industrial Python 
-Programming" course, where I was introduced to technologies such as PyQt, 
-Pygame, and Flask.`;
+Programming" course. The following year, my classmates and I advanced to the 
+"Industrial Python Programming" course, where I was introduced to technologies 
+such as PyQt, Pygame, and Flask.`;
 
 const ABOUT_FOURTH_PARAGRAPH = `I started focusing specifically on web 
 development at the beginning of 2024 and am self-taught. My colleagues and I 

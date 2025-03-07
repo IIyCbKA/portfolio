@@ -4,7 +4,16 @@
   box-sizing: border-box;
 }
 
+.defaultLogotype {
+  fill: var(--content-backup-color);
+}
+
+.logotypeWithHighlightedHeader {
+  fill: var(--content-text-color);
+}
+
 .logotypeRootImg {
   width: 56px;
   height: 56px;
+  transition: fill 0.5s;
 }

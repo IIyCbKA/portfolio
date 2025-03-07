@@ -2,8 +2,21 @@
   display: flex;
 }
 
-.navsItem {
+.navsItemRoot {
   margin-left: 15px;
+  transition: color 0.5s;
+}
+
+.navsItemDefault {
+  color: var(--content-backup-color);
+}
+
+.navsItemDefault:hover {
+  color: var(--content-backup-color);
+}
+
+.navsItemWithHighlightedHeader {
+  color: var(--content-text-color);
 }
 
 @media (max-width: 880px) {

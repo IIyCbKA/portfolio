@@ -29,6 +29,10 @@
   text-transform: uppercase;
 }
 
+.workText {
+  color: var(--content-third-color);
+}
+
 .workToolsTitle {
   font-weight: bold;
   text-transform: uppercase;

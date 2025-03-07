@@ -23,6 +23,14 @@
   text-align: left;
 }
 
+.menuItemRoot:hover {
+  color: var(--content-text-color);
+}
+
+.menuItemRoot:hover:before {
+  height: 0;
+}
+
 @media (max-width: 880px) {
   .menuWrapper {
     display: flex;

@@ -4,6 +4,7 @@
   line-height: 28px;
   text-align: left;
   font-family: var(--root-font), monospace;
+  color: var(--content-text-color);
 }
 
 .largeText {
@@ -12,6 +13,7 @@
   line-height: 22px;
   text-align: left;
   font-family: var(--root-font), monospace;
+  color: var(--content-text-color);
 }
 
 .defaultTitle {
