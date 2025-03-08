@@ -9,6 +9,7 @@
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+  transition: color 0.5s;
 }
 
 .anchorButtonRoot:hover {
