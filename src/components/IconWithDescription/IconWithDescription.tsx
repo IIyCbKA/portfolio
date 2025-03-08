@@ -10,9 +10,9 @@ export default function IconWithDescription({
   iconClassName,
   className,
 }: IconWithDescriptionData): React.ReactElement {
-  const containerClasses = classNames(styles.iconWithTitleContainer, className);
+  const containerClasses: string = classNames(styles.iconWithTitleContainer, className);
 
-  const iconClasses = classNames(iconClassName, {
+  const iconClasses: string = classNames(iconClassName, {
     [styles.iconWithTitle_icon]: !iconClassName,
   });
 

@@ -5,7 +5,7 @@ import { FOOTER_TEXT } from "./Footer.data";
 import classNames from "classnames";
 
 export default function Footer(): React.ReactElement {
-  const contentClasses = classNames(
+  const contentClasses: string = classNames(
     styles.footerContent,
     sharedStyles.defaultText,
   );

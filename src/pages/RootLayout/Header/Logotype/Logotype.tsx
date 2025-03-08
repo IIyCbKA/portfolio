@@ -11,13 +11,13 @@ export default function Logotype({
 }: LogotypeData): React.ReactElement {
   const location = useLocation();
 
-  const logotypeStyles = classNames(styles.logotypeRootImg, {
+  const logotypeStyles: string = classNames(styles.logotypeRootImg, {
     [styles.logotypeWithHighlightedHeader]: isHighlightedHeader,
     [styles.defaultLogotype]: !isHighlightedHeader,
   });
 
   // problem of HashRouter
-  const onClick = useCallback(() => {
+  const onClick = useCallback((): void => {
     if (location.pathname === LANDING_ROUTE) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }

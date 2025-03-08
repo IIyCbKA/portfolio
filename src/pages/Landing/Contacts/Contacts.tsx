@@ -8,13 +8,13 @@ import { LinkAnchorButton } from "../../../shared/models/AnchorButtonInterface";
 import AnchorButton from "../../../components/AnchorButton/AnchorButton";
 
 export default function Contacts(): React.ReactElement {
-  const contentClasses = classNames(
+  const contentClasses: string = classNames(
     styles.contactsContent,
     sharedStyles.contentWrap,
     sharedStyles.defaultText,
   );
 
-  const titleClasses = classNames(
+  const titleClasses: string = classNames(
     sharedStyles.defaultTitle,
     styles.contactsTitle,
   );

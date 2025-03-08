@@ -12,20 +12,20 @@ import {
 } from "./Hero.constants";
 
 export default function Hero(): React.ReactElement {
-  const desktopImgClasses = classNames(styles.heroImg, styles.heroDesktopImg);
+  const desktopImgClasses: string = classNames(styles.heroImg, styles.heroDesktopImg);
 
-  const mobileImgClasses = classNames(styles.heroImg, styles.heroMobileImg);
+  const mobileImgClasses: string = classNames(styles.heroImg, styles.heroMobileImg);
 
-  const contentContainerClasses = classNames(
+  const contentContainerClasses: string = classNames(
     styles.heroContentContainer,
     sharedStyles.contentWrap,
   );
 
-  const nameClasses = classNames(
+  const nameClasses: string = classNames(
     sharedStyles.largestTitle,
     styles.heroNameText,
   );
-  const otherTextClasses = classNames(
+  const otherTextClasses: string = classNames(
     sharedStyles.largeText,
     styles.heroOtherText,
   );

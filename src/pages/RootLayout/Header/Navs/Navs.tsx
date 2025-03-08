@@ -9,7 +9,7 @@ import classNames from "classnames";
 export default function Navs({
   isHighlightedHeader,
 }: NavsData): React.ReactElement {
-  const anchorButtonClasses = classNames(styles.navsItemRoot, {
+  const anchorButtonClasses: string = classNames(styles.navsItemRoot, {
     [styles.navsItemWithHighlightedHeader]: isHighlightedHeader,
     [styles.navsItemDefault]: !isHighlightedHeader,
   });

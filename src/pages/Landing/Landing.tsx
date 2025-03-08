@@ -9,10 +9,10 @@ import { useLocation } from "react-router-dom";
 export default function Landing(): React.ReactElement {
   const location = useLocation();
 
-  React.useEffect(() => {
+  React.useEffect((): void => {
     if (location.hash) {
-      const id = location.hash.replace("#", "");
-      const element = document.getElementById(id);
+      const id: string = location.hash.replace("#", "");
+      const element: HTMLElement | null = document.getElementById(id);
       if (element) element.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);

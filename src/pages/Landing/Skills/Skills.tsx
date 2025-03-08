@@ -8,18 +8,18 @@ import { Skill } from "./Skills.interface";
 import IconWithDescription from "../../../components/IconWithDescription/IconWithDescription";
 
 export default function Skills(): React.ReactElement {
-  const contentClasses = classNames(
+  const contentClasses: string = classNames(
     styles.skillsContent,
     sharedStyles.contentWrap,
     sharedStyles.defaultText,
   );
 
-  const descriptionClasses = classNames(
+  const descriptionClasses: string = classNames(
     styles.skillsDescriptionWrapper,
     sharedStyles.defaultText,
   );
 
-  const titleClasses = classNames(
+  const titleClasses: string = classNames(
     styles.skillsTitle,
     sharedStyles.defaultTitle,
   );

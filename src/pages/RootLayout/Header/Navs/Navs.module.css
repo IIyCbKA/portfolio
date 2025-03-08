@@ -8,15 +8,15 @@
 }
 
 .navsItemDefault {
-  color: var(--content-backup-color);
+  color: var(--second-white);
 }
 
 .navsItemDefault:hover {
-  color: var(--content-backup-color);
+  color: var(--second-white);
 }
 
 .navsItemWithHighlightedHeader {
-  color: var(--content-text-color);
+  color: var(--basic-dark);
 }
 
 @media (max-width: 880px) {

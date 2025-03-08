@@ -1,6 +1,6 @@
 .heroWrapper {
   height: 720px;
-  background: var(--content-root-color);
+  background: var(--basic-blue);
   width: 100%;
   padding-top: calc(var(--header-height) + 20px);
   position: relative;
@@ -52,14 +52,14 @@
 }
 
 .heroContent .heroNameText {
-  color: var(--content-backup-color);
+  color: var(--second-white);
   margin: 8px 0 10px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .heroContent .heroOtherText {
-  color: var(--content-backup-color);
+  color: var(--second-white);
 }
 
 @media (max-width: 880px) {

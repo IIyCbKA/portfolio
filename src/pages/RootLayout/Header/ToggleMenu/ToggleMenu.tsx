@@ -8,24 +8,24 @@ export default function ToggleMenu({
   setOpen,
   isHighlightedHeader,
 }: ToggleMenuData): React.ReactElement {
-  const onClick = () => {
-    setOpen((prevState) => !prevState);
+  const onClick = (): void => {
+    setOpen((prevState: boolean): boolean => !prevState);
   };
 
-  const buttonClasses = classNames(styles.toggleMenuWrapper, {
+  const buttonClasses: string = classNames(styles.toggleMenuWrapper, {
     [styles.open]: isOpen,
   });
 
-  const defaultLineClasses = classNames(styles.rootLine, {
+  const defaultLineClasses: string = classNames(styles.rootLine, {
     [styles.lineWithHighlightedHeader]: isHighlightedHeader,
     [styles.defaultLine]: !isHighlightedHeader,
   });
 
-  const firstLineClasses = classNames(defaultLineClasses, styles.firstLine);
+  const firstLineClasses: string = classNames(defaultLineClasses, styles.firstLine);
 
-  const secondLineClasses = classNames(defaultLineClasses, styles.secondLine);
+  const secondLineClasses: string = classNames(defaultLineClasses, styles.secondLine);
 
-  const thirdLineClasses = classNames(defaultLineClasses, styles.thirdLine);
+  const thirdLineClasses: string = classNames(defaultLineClasses, styles.thirdLine);
 
   return (
     <button className={buttonClasses} onClick={onClick}>

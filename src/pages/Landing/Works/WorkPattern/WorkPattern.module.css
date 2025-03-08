@@ -8,7 +8,7 @@
   max-width: 100%;
   width: var(--default-content-width);
   margin: 80px 0;
-  color: var(--content-third-color);
+  color: var(--basic-white);
   display: flex;
   flex-direction: row;
 }
@@ -30,7 +30,7 @@
 }
 
 .workText {
-  color: var(--content-third-color);
+  color: var(--basic-white);
 }
 
 .workToolsTitle {
@@ -47,7 +47,7 @@
 }
 
 :global(#works a) {
-  color: var(--content-third-color);
+  color: var(--basic-white);
 }
 
 @media (max-width: 880px) {

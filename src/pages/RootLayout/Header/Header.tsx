@@ -9,24 +9,24 @@ import { ScrollStore } from "../../../stores/ScrollStore";
 import sharedStyles from "../../../shared/styles.module.css";
 
 export default function Header(): React.ReactElement {
-  const scrollY: number = ScrollStore((state) => state.scrollY);
+  const scrollY: number = ScrollStore((state): number => state.scrollY);
   const [isOpenMenu, setOpenMenu] = React.useState<boolean>(false);
   const isHighlightHeader: boolean = scrollY > 0 || isOpenMenu;
 
-  const headerWrapperClasses = classNames(styles.headerWrapper, {
+  const headerWrapperClasses: string = classNames(styles.headerWrapper, {
     [styles.open]: isOpenMenu || scrollY,
   });
 
-  const headerMaskClasses = classNames(styles.headerMask, {
+  const headerMaskClasses: string = classNames(styles.headerMask, {
     [styles.headerMaskBoxShadow]: !isOpenMenu,
   });
 
-  const headerContainerClasses = classNames(
+  const headerContainerClasses: string = classNames(
     styles.headerContainer,
     sharedStyles.contentWrap,
   );
 
-  React.useEffect(() => {
+  React.useEffect((): void => {
     if (isOpenMenu) setOpenMenu(false);
   }, [scrollY]);
 

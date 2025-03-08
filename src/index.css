@@ -2,11 +2,11 @@
   --root-font: "Roboto Mono", monospace;
   --title-font: "Exo 2", sans-serif;
   --header-height: 80px;
-  --content-root-color: #0076fe;
-  --content-second-color: #144b9d;
-  --content-third-color: #ffffff;
-  --content-backup-color: #f0f4f8;
-  --content-text-color: #212529;
+  --basic-blue: #0076fe;
+  --second-blue: #144b9d;
+  --basic-white: #ffffff;
+  --second-white: #f0f4f8;
+  --basic-dark: #212529;
   --default-content-width: 1120px;
 }
 

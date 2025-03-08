@@ -10,12 +10,12 @@ export default function AnchorButton({
   linkRef,
   className,
 }: AnchorButtonType): React.ReactElement {
-  const buttonClasses = classNames(styles.anchorButtonRoot, className);
+  const buttonClasses: string = classNames(styles.anchorButtonRoot, className);
 
-  const handleClick = (event: React.MouseEvent) => {
+  const handleClick = (event: React.MouseEvent): void => {
     event.preventDefault();
     if (scrollID) {
-      const element = document.getElementById(scrollID);
+      const element: HTMLElement | null = document.getElementById(scrollID);
       if (element) element.scrollIntoView({ behavior: "smooth" });
     } else window.open(linkRef, "_blank");
   };

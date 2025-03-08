@@ -13,16 +13,16 @@ export default function WorkPattern({
   img,
   className,
 }: Work): React.ReactElement {
-  const containerClasses = classNames(styles.workContainer, className);
+  const containerClasses: string = classNames(styles.workContainer, className);
 
-  const contentClasses = classNames(
+  const contentClasses: string = classNames(
     styles.workContent,
     sharedStyles.defaultText,
     sharedStyles.contentWrap,
   );
 
-  const titleClasses = classNames(styles.workTitle, sharedStyles.largeTitle);
-  const textClasses = classNames(styles.workText, sharedStyles.defaultText);
+  const titleClasses: string = classNames(styles.workTitle, sharedStyles.largeTitle);
+  const textClasses: string = classNames(styles.workText, sharedStyles.defaultText);
 
   return (
     <div className={containerClasses}>

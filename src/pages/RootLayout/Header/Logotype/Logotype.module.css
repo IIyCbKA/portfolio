@@ -5,11 +5,11 @@
 }
 
 .defaultLogotype {
-  fill: var(--content-backup-color);
+  fill: var(--second-white);
 }
 
 .logotypeWithHighlightedHeader {
-  fill: var(--content-text-color);
+  fill: var(--basic-dark);
 }
 
 .logotypeRootImg {

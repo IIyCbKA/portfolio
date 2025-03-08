@@ -8,13 +8,13 @@ import { Work } from "./Works.interface";
 import WorkPattern from "./WorkPattern/WorkPattern";
 
 export default function Works(): React.ReactElement {
-  const contentClasses = classNames(
+  const contentClasses: string = classNames(
     styles.worksContent,
     sharedStyles.contentWrap,
     sharedStyles.defaultText,
   );
 
-  const titleClasses = classNames(styles.worksTitle, sharedStyles.defaultTitle);
+  const titleClasses: string = classNames(styles.worksTitle, sharedStyles.defaultTitle);
 
   return (
     <div id={IDs.WORKS} className={styles.worksWrapper}>

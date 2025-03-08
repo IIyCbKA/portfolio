@@ -23,7 +23,7 @@
 }
 
 .headerMask {
-  background: var(--content-third-color);
+  background: var(--basic-white);
   position: absolute;
   top: 0;
   left: 0;

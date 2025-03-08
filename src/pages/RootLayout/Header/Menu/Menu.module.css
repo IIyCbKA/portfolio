@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: calc(100dvh - var(--header-height));
-  background: var(--content-third-color);
+  background: var(--basic-white);
   transform: translate(100%);
   transition: transform 0.25s;
   padding-top: 20px;
@@ -24,7 +24,7 @@
 }
 
 .menuItemRoot:hover {
-  color: var(--content-text-color);
+  color: var(--basic-dark);
 }
 
 .menuItemRoot:hover:before {

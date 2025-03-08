@@ -11,7 +11,7 @@
 }
 
 .worksTitle {
-  color: var(--content-root-color);
+  color: var(--basic-blue);
   margin-bottom: 20px;
   text-transform: uppercase;
 }

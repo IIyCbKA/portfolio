@@ -8,7 +8,7 @@ import AnchorButton from "../../../../components/AnchorButton/AnchorButton";
 import sharedStyles from "../../../../shared/styles.module.css";
 
 export default function Menu({ isOpen }: MenuData): React.ReactElement {
-  const wrapperClasses = classNames(
+  const wrapperClasses: string = classNames(
     styles.menuWrapper,
     sharedStyles.contentWrap,
     {
@@ -18,7 +18,7 @@ export default function Menu({ isOpen }: MenuData): React.ReactElement {
 
   return (
     <div className={wrapperClasses}>
-      {NAV_ITEMS.map((item: ScrollAnchorButton) => (
+      {NAV_ITEMS.map((item: ScrollAnchorButton): React.ReactElement => (
         <AnchorButton
           key={item.title}
           title={item.title}
