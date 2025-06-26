@@ -1,0 +1,19 @@
+.logotypeWrap {
+  width: 56px;
+  height: 56px;
+  box-sizing: border-box;
+}
+
+.defaultLogotype {
+  fill: var(--second-white);
+}
+
+.logotypeWithHighlightedHeader {
+  fill: var(--dark);
+}
+
+.logotypeRootImg {
+  width: 56px;
+  height: 56px;
+  transition: fill 0.5s;
+}

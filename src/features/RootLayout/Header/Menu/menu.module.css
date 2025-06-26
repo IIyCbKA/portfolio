@@ -1,0 +1,38 @@
+.menuWrapper {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  height: calc(100dvh - var(--header-height));
+  background: var(--basic-white);
+  transform: translate(100%);
+  transition: transform 0.25s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+  flex-direction: column;
+}
+
+.menuWrapperOpen {
+  transform: translate(0%);
+}
+
+.menuItemRoot {
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: left;
+}
+
+.menuItemRoot:hover {
+  color: var(--dark);
+}
+
+.menuItemRoot:hover:before {
+  height: 0;
+}
+
+@media (max-width: 880px) {
+  .menuWrapper {
+    display: flex;
+  }
+}

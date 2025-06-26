@@ -1,0 +1,69 @@
+.workContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.workContent {
+  max-width: 100%;
+  width: var(--content-width);
+  margin: 80px 0;
+  color: var(--basic-white);
+  display: flex;
+  flex-direction: row;
+}
+
+.workContentLeft {
+  width: 35%;
+}
+
+.workContentRight {
+  width: 65%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.workTitle {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.workText {
+  color: var(--basic-white);
+}
+
+.workToolsTitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.workImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+}
+
+:global(#works a) {
+  color: var(--basic-white);
+}
+
+@media (max-width: 880px) {
+  .workContent {
+    flex-direction: column;
+  }
+
+  .workContentLeft {
+    width: 100%;
+  }
+
+  .workContentRight {
+    width: 100%;
+  }
+
+  .workImage {
+    position: static;
+  }
+}

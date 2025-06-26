@@ -1,0 +1,29 @@
+.worksWrapper {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.worksContent {
+  max-width: 100%;
+  width: var(--content-width);
+}
+
+.worksTitle {
+  color: var(--basic-blue);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.workEducation {
+  background-color: #154379;
+}
+
+.workGRP {
+  background-color: #222222;
+}
+
+:global(#works) {
+  scroll-margin-top: calc(var(--header-height) + 20px);
+}

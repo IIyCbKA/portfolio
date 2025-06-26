@@ -1,0 +1,27 @@
+@layer utils {
+  .navsItemRoot {
+    margin-left: 15px;
+  }
+
+  .navsItemDefault {
+    color: var(--second-white);
+  }
+
+  .navsItemWithHighlightedHeader {
+    color: var(--dark);
+  }
+
+  .navsItemWithHighlightedHeader:hover {
+    color: var(--second-white);
+  }
+}
+
+.navsContainer {
+  display: flex;
+}
+
+@media (max-width: 880px) {
+  .navsContainer {
+    display: none;
+  }
+}

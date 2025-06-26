@@ -1,0 +1,40 @@
+@layer components {
+  .anchorRoot {
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 4px 6px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.5s;
+  }
+
+  .anchorRoot:hover {
+    color: var(--basic-white);
+  }
+
+  .anchorRoot:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: 0.3s;
+    background: linear-gradient(
+      90deg,
+      var(--basic-blue),
+      var(--second-blue)
+    );
+  }
+
+  .anchorRoot:hover:before {
+    height: 100%;
+  }
+}

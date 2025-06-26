@@ -1,3 +1,8 @@
+@layer base, components, utils;
+/* base - basic themes */
+/* components - component modules */
+/* utils - custom classes-redefinitions */
+
 :root {
   --root-font: "Roboto Mono", monospace;
   --title-font: "Exo 2", sans-serif;
@@ -6,8 +11,8 @@
   --second-blue: #144b9d;
   --basic-white: #ffffff;
   --second-white: #f0f4f8;
-  --basic-dark: #212529;
-  --default-content-width: 1120px;
+  --dark: #212529;
+  --content-width: 1120px;
 }
 
 * {
@@ -18,10 +23,12 @@ body {
   min-width: 340px;
   margin: 0;
   box-sizing: border-box;
-}
-
-a {
   font-family: var(--root-font), monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: left;
+  color: var(--dark);
 }
 
 a:hover {
