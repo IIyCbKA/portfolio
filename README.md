@@ -1,4 +1,4 @@
-# Portfolio [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/IIyCbKA/portfolio/blob/main/LICENSE) [![Compiler](https://img.shields.io/badge/Compiler-TypeScript-blue)](https://github.com/microsoft/TypeScript)
+# Portfolio [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/IIyCbKA/portfolio/blob/main/LICENSE) [![TypeScript](https://img.shields.io/badge/TypeScript-5.7.2-blue)](https://www.typescriptlang.org/) [![Node](https://img.shields.io/badge/Node-20-green)](https://nodejs.org/en)
 
 ## 📝 Description
 
