@@ -24,7 +24,7 @@
 }
 
 .menuItemRoot:hover {
-  color: var(--dark);
+  color: var(--secondary-color);
 }
 
 .menuItemRoot:hover:before {

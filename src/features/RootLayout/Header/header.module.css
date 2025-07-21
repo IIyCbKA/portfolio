@@ -1,6 +1,6 @@
 @layer utils {
   .toggleWithHighlighted {
-    color: var(--dark);
+    color: var(--secondary-color);
   }
 }
 

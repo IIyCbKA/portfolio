@@ -2,6 +2,10 @@
   width: 56px;
   height: 56px;
   box-sizing: border-box;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
 }
 
 .defaultLogotype {
@@ -9,11 +13,11 @@
 }
 
 .logotypeWithHighlightedHeader {
-  fill: var(--dark);
+  fill: var(--secondary-color);
 }
 
 .logotypeRootImg {
-  width: 56px;
-  height: 56px;
+  width: 100%;
+  height: 100%;
   transition: fill 0.5s;
 }

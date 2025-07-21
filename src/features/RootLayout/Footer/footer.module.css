@@ -24,7 +24,7 @@
   height: 8px;
   background: linear-gradient(
     90deg,
-    var(--basic-blue),
-    var(--second-blue)
+    var(--primary-color),
+    var(--secondary-color)
   );
 }

@@ -1,6 +1,6 @@
 .heroWrapper {
   height: 720px;
-  background: var(--basic-blue);
+  background: var(--primary-color);
   width: 100%;
   padding-top: calc(var(--header-height) + 20px);
   position: relative;

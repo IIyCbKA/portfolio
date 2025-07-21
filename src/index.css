@@ -7,11 +7,10 @@
   --root-font: "Roboto Mono", monospace;
   --title-font: "Exo 2", sans-serif;
   --header-height: 80px;
-  --basic-blue: #0076fe;
-  --second-blue: #144b9d;
+  --primary-color: #404042;
+  --secondary-color: #222222;
   --basic-white: #ffffff;
   --second-white: #f0f4f8;
-  --dark: #212529;
   --content-width: 1120px;
 }
 
@@ -28,7 +27,7 @@ body {
   font-size: 14px;
   line-height: 28px;
   text-align: left;
-  color: var(--dark);
+  color: var(--secondary-color);
 }
 
 a:hover {

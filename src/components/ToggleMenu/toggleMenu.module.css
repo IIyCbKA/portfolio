@@ -52,8 +52,8 @@
     top: calc(50% - 2px);
     background: linear-gradient(
       90deg,
-      var(--basic-blue),
-      var(--second-blue)
+      var(--primary-color),
+      var(--secondary-color)
     );
   }
 

@@ -8,7 +8,7 @@
   }
 
   .navsItemWithHighlightedHeader {
-    color: var(--dark);
+    color: var(--secondary-color);
   }
 
   .navsItemWithHighlightedHeader:hover {
