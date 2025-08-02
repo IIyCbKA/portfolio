@@ -27,15 +27,7 @@ export const WORKS: WorkEntity[] = [
         {`. Design by IIyCbKA.`}
       </>
     ),
-    tools: [
-      "React",
-      "WebSocket",
-      "MUI",
-      "Redux",
-      "Axios",
-      "Intersection Observer",
-      "Flask",
-    ],
+    tools: ["React", "WebSocket", "MUI", "Redux", "Axios", "FastAPI"],
     img: EducationImg,
     className: styles.workEducation,
   },
@@ -52,15 +44,7 @@ export const WORKS: WorkEntity[] = [
         {`. Design by IIyCbKA.`}
       </>
     ),
-    tools: [
-      "React",
-      "Redux",
-      "Django",
-      "DRF",
-      "Pandas",
-      "PyTorch",
-      "Scikit-learn",
-    ],
+    tools: ["React", "Redux", "Django", "Pandas", "PyTorch", "Scikit-learn"],
     img: GrpImg,
     className: styles.workGRP,
   },

@@ -1,9 +1,11 @@
 import { SkillEntity } from "./skills.types";
 
-export const INTRO = `The main area of expertise is front end 
-development (client side of the web). HTML, CSS, JS, TS building small and 
-medium web applications on React, custom plugins, features, animations, 
-and coding interactive layouts.`;
+export const INTRO = `My primary area of expertise is front-end development 
+(the client side of the web). I build small- and medium-scale web applications 
+using HTML, CSS, JavaScript, and TypeScript with React, creating custom 
+plugins, features, animations, and interactive layouts. I also enjoy 
+server-side development with Django, writing REST APIs, working with 
+databases, and crafting end-to-end solutions.`;
 
 export const SKILLS: SkillEntity[] = [
   {
@@ -23,16 +25,16 @@ export const SKILLS: SkillEntity[] = [
     description: "C++",
   },
   {
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
-    description: "C",
-  },
-  {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     description: "React",
   },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
     description: "Node",
+  },
+  {
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+    description: "Vite",
   },
   {
     url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",

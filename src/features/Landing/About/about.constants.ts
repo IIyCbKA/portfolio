@@ -21,12 +21,17 @@ entire frontend was my responsibility. Since then, I've fallen in love with web
 development, particularly with Node.js, React and Redux, which I used in that 
 project.`;
 
-const ABOUT_FIFTH_PARAGRAPH = `Currently, I'm dedicating myself to frontend 
-development. I'm determined to transition from JavaScript to TypeScript, as I 
-highly value static typing, which makes the code more readable and reduces the 
-number of potential bugs.`;
+const ABOUT_FIFTH_PARAGRAPH = `Currently, I’m dedicating myself to frontend 
+development, and I’m actively transitioning from JavaScript to TypeScript to 
+leverage static typing for more readable, reliable code, while also expanding 
+my expertise on the backend.`;
 
-const ABOUT_SIXTH_PARAGRAPH = `If you'd like to propose collaboration on a 
+const ABOUT_SIXTH_PARAGRAPH = `In addition to frontend work, I’ve developed a 
+passion for server-side development with Django—building RESTful APIs, managing 
+databases, and crafting complete end-to-end applications that complement my 
+frontend skills.`;
+
+const ABOUT_SEVENTH_PARAGRAPH = `If you'd like to propose collaboration on a 
 project or simply want to chat and discuss something interesting, feel free to 
 send me a message.`;
 
@@ -37,4 +42,5 @@ export const ABOUT_PARAGRAPHS: string[] = [
   ABOUT_FOURTH_PARAGRAPH,
   ABOUT_FIFTH_PARAGRAPH,
   ABOUT_SIXTH_PARAGRAPH,
+  ABOUT_SEVENTH_PARAGRAPH,
 ];
