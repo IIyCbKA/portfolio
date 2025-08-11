@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./hero.module.css";
-import Hero1400x720 from "@/assets/Hero-1400x720.svg";
-import Hero500x500 from "@/assets/Hero-500x500.svg";
+import HeroDesktop from "@/assets/Hero-2560x1320.png";
+import HeroMobile from "@/assets/Hero-1024x1024.png";
 import classNames from "classnames";
 import sharedStyles from "@/shared/styles.module.css";
 import {
@@ -37,13 +37,13 @@ export default function Hero(): React.ReactElement {
         <div className={styles.heroImgContainer}>
           <img
             className={mobileImgStyles}
-            src={Hero500x500}
+            src={HeroMobile}
             alt={HERO_IMG_ALT}
           />
         </div>
         <img
           className={desktopImgStyles}
-          src={Hero1400x720}
+          src={HeroDesktop}
           alt={HERO_IMG_ALT}
         />
       </div>

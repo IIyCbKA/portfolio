@@ -32,6 +32,7 @@
 }
 
 .heroImg {
+  pointer-events: none;
   object-fit: cover;
   top: 0;
   left: 0;
