@@ -12,8 +12,12 @@ import {
 } from "./hero.constants";
 
 export default function Hero(): React.ReactElement {
-  const desktopImgStyles = classNames(styles.heroImg, styles.heroDesktopImg);
-  const mobileImgStyles = classNames(styles.heroImg, styles.heroMobileImg);
+  const [isLoaded, setIsLoaded] = React.useState<boolean>(false);
+
+  const imgStyles = classNames(styles.heroImg, {
+    [styles.loadingHero]: !isLoaded,
+    [styles.loadedHero]: isLoaded,
+  });
   const nameStyles = classNames(sharedStyles.largestTitle, styles.heroNameText);
 
   const contentContainerStyles = classNames(
@@ -34,18 +38,17 @@ export default function Hero(): React.ReactElement {
           <span className={nameStyles}>{NAME}</span>
           <span className={otherTextStyles}>{SECOND_OTHER_TEXT}</span>
         </div>
-        <div className={styles.heroImgContainer}>
+        <picture className={styles.heroPicture}>
+          <source media="(min-width: 881px)" srcSet={HeroDesktop} />
+          <source media="(max-width: 880px)" srcSet={HeroMobile} />
           <img
-            className={mobileImgStyles}
+            className={imgStyles}
             src={HeroMobile}
             alt={HERO_IMG_ALT}
+            onLoad={() => setIsLoaded(true)}
+            loading="eager"
           />
-        </div>
-        <img
-          className={desktopImgStyles}
-          src={HeroDesktop}
-          alt={HERO_IMG_ALT}
-        />
+        </picture>
       </div>
     </div>
   );
